@@ -15,7 +15,10 @@ Day 2 - 07/24/2018
 Morning Session:
 ====================
 1. Introduction to Chef
-2. CHEF setup
+  ==>Define the following:
+   ===>Node, Resource, Recipe, Cookbook, RunList, Roles, Search, Chef Server, Chef development kit, knife, Solo, Zero
+2. Oraganizations, Environments, Roles, Nodes
+3. CHEF setup
 Afternoon Session:
 ====================
 
