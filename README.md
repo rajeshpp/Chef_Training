@@ -46,6 +46,7 @@ Afternoon Session:
    
    -------------------------------------------
    PS D:\Rajesh_Ruby\Chef_Training\chef-repo\cookbooks\my_cookbooks> chef generate cookbook apache
+    
     Generating cookbook apache
     - Ensuring correct cookbook file content
     - Ensuring delivery configuration
