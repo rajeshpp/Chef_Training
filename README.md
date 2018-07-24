@@ -14,6 +14,8 @@ Day 2 - 07/24/2018
 =======================
 Morning Session:
 ====================
+1. Introduction to Chef
+2. CHEF setup
 Afternoon Session:
 ====================
 
