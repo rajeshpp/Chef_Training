@@ -18,7 +18,14 @@ Morning Session:
   ==>Define the following:
    ===>Node, Resource, Recipe, Cookbook, RunList, Roles, Search, Chef Server, Chef development kit, knife, Solo, Zero
 2. Oraganizations, Environments, Roles, Nodes
-3. CHEF setup
+3. Configuration drift, OHAI, RUN List
+4. CHEF setup 
+    a. https://downloads.chef.io/chef-dk/
+    b. https://www.chef.io/
+    
+ PS C:\Users\admin> knife --version
+  Chef: 14.2.0
+
 Afternoon Session:
 ====================
 
