@@ -43,6 +43,7 @@ Afternoon Session:
     node_name "node1-unbuntu"
 4. Created few chef recipes under chef-repo/cookbooks/my_recipes
 5. Worked on cookbooks:
+   
    -------------------------------------------
    PS D:\Rajesh_Ruby\Chef_Training\chef-repo\cookbooks\my_cookbooks> chef generate cookbook apache
     Generating cookbook apache
