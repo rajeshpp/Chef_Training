@@ -12,6 +12,6 @@ service "apache2" do
 end
 
 cookbook_file "/var/www/html/index.html" do
-    source "index.html"
+    source node["apache"]["indexfile"]
     mode "0644"
 end

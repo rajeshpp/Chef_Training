@@ -68,7 +68,7 @@ Afternoon Session:
     PS D:\Rajesh_Ruby\Chef_Training\chef-repo\cookbooks> knife cookbook upload apache
       Uploading apache       [0.1.0]
       Uploaded 1 cookbook.
-7. Link node and apache
+7. Create run list
     PS D:\Rajesh_Ruby\Chef_Training\chef-repo\cookbooks> knife node run_list add node1-unbuntu "recipe[apache]"
     node1-unbuntu:
       run_list: recipe[apache]
