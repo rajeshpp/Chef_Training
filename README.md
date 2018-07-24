@@ -74,7 +74,7 @@ Afternoon Session:
       run_list: recipe[apache]
 8. On node run below command to pull the changes manually:
     root@ip-172-31-1-105:~# chef-client
-
+9. Refer cookbooks folder for more cookbooks examples
 
 Day 3 - 07/25/2018
 =======================
