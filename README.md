@@ -79,7 +79,10 @@ Afternoon Session:
 Day 3 - 07/25/2018
 =======================
 Morning Session:
-====================
+=======================
+1. Started day with another cookbook for motd by using templates
+2. 
+
 Afternoon Session:
 ====================
 
