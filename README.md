@@ -87,6 +87,26 @@ Morning Session:
 Afternoon Session:
 ====================
 1. Fixing of issues task given on apache2
+2. Data Bags, Search, User data
+
+    Users:
+    PS D:\Rajesh_Ruby\Chef_Training\chef-repo> knife data_bag create users
+    Created data_bag[users]
+    PS D:\Rajesh_Ruby\Chef_Training\chef-repo> knife data_bag from file users bobo.json
+        Updated data_bag_item[users::bobo]
+    PS D:\Rajesh_Ruby\Chef_Training\chef-repo> knife data_bag from file users frank.json
+        Updated data_bag_item[users::frank]
+    
+    Groups:
+    PS D:\Rajesh_Ruby\Chef_Training\chef-repo> knife data_bag create groups
+    Created data_bag[groups]
+    PS D:\Rajesh_Ruby\Chef_Training\chef-repo> knife data_bag from file groups clowns.json
+    Updated data_bag_item[groups::clowns]
+
+    PS D:\Rajesh_Ruby\Chef_Training\chef-repo\cookbooks> chef generate cookbook users
+    Generating cookbook users
+
+    
 
 
 Day 4 - 07/26/2018
