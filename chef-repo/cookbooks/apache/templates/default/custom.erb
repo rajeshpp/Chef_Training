@@ -2,7 +2,6 @@
     Listen <%= @port %>
 <% end -%>
 
-
 <VirtualHost *:<%= @port %>>
     ServerAdmin Webmaster@localhost
 
@@ -16,5 +15,6 @@
         AllowOverride None
         Order allow,deny
         allow from all
+        Require all granted
     </Directory>
 </VirtualHost>

@@ -86,6 +86,7 @@ Morning Session:
 
 Afternoon Session:
 ====================
+1. Fixing of issues task given on apache2
 
 
 Day 4 - 07/26/2018
