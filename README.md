@@ -81,7 +81,8 @@ Day 3 - 07/25/2018
 Morning Session:
 =======================
 1. Started day with another cookbook for motd by using templates
-2. 
+2. pci compliance related cookbook added and added motd to depend on this.
+3. apache cookbook enhanced for few new things.
 
 Afternoon Session:
 ====================
