@@ -117,6 +117,7 @@ Morning Session:
 ====================
 Best Practices:
 1. Have 'base' roles
+2. Chef super market
 
 Afternoon Session:
 ====================
