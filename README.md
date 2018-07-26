@@ -1,4 +1,8 @@
 # Chef_Training
+
+Docs shared by trainer: https://github.com/manikabedi/chef
+
+
 Day 1- 07/23/2018
 ====================
 morning Session:
