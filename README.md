@@ -106,12 +106,17 @@ Afternoon Session:
     PS D:\Rajesh_Ruby\Chef_Training\chef-repo\cookbooks> chef generate cookbook users
     Generating cookbook users
 
-    
+    Upload role to the server:
+    PS D:\Rajesh_Ruby\Chef_Training\chef-repo\roles> knife role from file .\webserver.rb
+    Updated Role webserver
 
 
 Day 4 - 07/26/2018
 =======================
 Morning Session:
 ====================
+Best Practices:
+1. Have 'base' roles
+
 Afternoon Session:
 ====================
