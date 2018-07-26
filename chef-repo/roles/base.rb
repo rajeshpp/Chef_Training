@@ -1,3 +1,3 @@
 name "base"
 description "Base server Role"
-run_list "recipe[motd]","recipe[users]"
+run_list "recipe[ntp]","recipe[motd]","recipe[users]"
