@@ -25,7 +25,7 @@ Morning Session:
     
  PS C:\Users\admin> knife --version
   Chef: 14.2.0
-5. Refer node-creation.md file
+5. Refer """node-creation.md""" file
 
 Afternoon Session:
 ====================
@@ -121,3 +121,26 @@ Best Practices:
 
 Afternoon Session:
 ====================
+1. Preparing full cookbook
+2. Installed awscli with the help of cookbook. Here is what done for that:
+
+
+===================================
+
+Before installing:
+root@ip-172-31-11-17:/etc/selinux/default# aws s3 ls
+The program 'aws' is currently not installed. You can install it by typing:
+apt install awscli
+
+
+cookbook downloaded:
+cloudcli:
+    Dependencies: poise-python ~> 1.6
+        Dependencies: poise-languages ~> 2.0 & poise ~> 2.7
+            Dependencies: poise-archive ~> 1.0 & poise ~> 2.5
+
+    Then Upload=>add to run list==>chef-client
+
+After Installing:
+root@ip-172-31-11-17:/etc/selinux/default# aws s3 ls
+Unable to locate credentials. You can configure credentials by running "aws configure".
