@@ -1,5 +1,4 @@
-PS D:\Rajesh_Ruby\Chef_Training\chef-repo> knife bootstrap 52.66.64.55 --ssh-user ubuntu --sudo --i
-dentity-file .\chef.pem --node-name node1-unbuntu
+PS D:\Rajesh_Ruby\Chef_Training\chef-repo> knife bootstrap 52.66.64.55 --ssh-user ubuntu --sudo --identity-file .\chef.pem --node-name node1-unbuntu
 Creating new client for node1-unbuntu
 Creating new node for node1-unbuntu
 Connecting to 52.66.64.55
