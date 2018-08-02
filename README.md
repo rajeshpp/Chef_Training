@@ -148,3 +148,15 @@ cloudcli:
 After Installing:
 root@ip-172-31-11-17:/etc/selinux/default# aws s3 ls
 Unable to locate credentials. You can configure credentials by running "aws configure".
+
+
+
+
+MY Learning:
+===========================================================
+
+Step 1: Install Chef DK in workstation
+Step 2: Get chef-repo into workstation by using the command: chef generate repo practice
+Step 3: Create a sample recipe {Better put it in cookbooks/my_recipes folder for clear understanding}
+Step 4: Run the sample recipe in local mode by using the command: chef-client --local-mode webserver.rb
+Step 5: Now, its time to start with cookbooks:
