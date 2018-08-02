@@ -161,3 +161,117 @@ Step 2: Get chef-repo into workstation by using the command: chef generate repo 
 Step 3: Create a sample recipe {Better put it in cookbooks/my_recipes folder for clear understanding}
 Step 4: Run the sample recipe in local mode by using the command: chef-client --local-mode webserver.rb
 Step 5: Now, its time to start with cookbooks:
+
+    From cookbooks folder, run the command: chef generate cookbook learn_chef_httpd
+
+
+    [root@ip-172-31-95-250 cookbooks]# pwd
+    /root/chef/practice/Chef_Training/chef-repo/cookbooks
+
+
+    [root@ip-172-31-95-250 cookbooks]# chef generate cookbook learn_chef_httpd
+    Generating cookbook learn_chef_httpd
+    - Ensuring correct cookbook file content
+    - Ensuring delivery configuration
+    - Ensuring correct delivery build cookbook content
+
+    Your cookbook is ready. Type `cd learn_chef_httpd` to enter it.
+
+    There are several commands you can run to get started locally developing and testing your cookbook.
+    Type `delivery local --help` to see a full list.
+
+    Why not start by writing a test? Tests for the default recipe are stored at:
+
+    test/integration/default/default_test.rb
+
+    If you'd prefer to dive right in, the default recipe can be found at:
+
+    recipes/default.rb  
+
+
+    [root@ip-172-31-95-250 cookbooks]# tree learn_chef_httpd
+            learn_chef_httpd
+            ├── Berksfile
+            ├── CHANGELOG.md
+            ├── chefignore
+            ├── LICENSE
+            ├── metadata.rb
+            ├── README.md
+            ├── recipes
+            │   └── default.rb
+            ├── spec
+            │   ├── spec_helper.rb
+            │   └── unit
+            │       └── recipes
+            │           └── default_spec.rb
+            └── test
+                └── integration
+                    └── default
+                        └── default_test.rb
+
+            7 directories, 10 files
+
+
+        Create a template:
+
+        [root@ip-172-31-95-250 cookbooks]# pwd
+            /root/chef/practice/Chef_Training/chef-repo/cookbooks
+            [root@ip-172-31-95-250 cookbooks]# chef generate template learn_chef_httpd index.html
+            Recipe: code_generator::template
+            * directory[./learn_chef_httpd/templates] action create
+                - create new directory ./learn_chef_httpd/templates
+                - restore selinux security context
+            * template[./learn_chef_httpd/templates/index.html.erb] action create
+                - create new file ./learn_chef_httpd/templates/index.html.erb
+                - update content in file ./learn_chef_httpd/templates/index.html.erb from none to e3b0c4
+                (diff output suppressed by config)
+                - restore selinux security context
+            [root@ip-172-31-95-250 cookbooks]# tree learn_chef_httpd/
+            learn_chef_httpd/
+            ├── Berksfile
+            ├── CHANGELOG.md
+            ├── chefignore
+            ├── LICENSE
+            ├── metadata.rb
+            ├── README.md
+            ├── recipes
+            │   └── default.rb
+            ├── spec
+            │   ├── spec_helper.rb
+            │   └── unit
+            │       └── recipes
+            │           └── default_spec.rb
+            ├── templates
+            │   └── index.html.erb
+            └── test
+                └── integration
+                    └── default
+                        └── default_test.rb
+
+            8 directories, 11 files
+
+
+    ==>copy the contents of the HTML file from your recipe to the new HTML file, index.html.erb.
+
+    ==>Updaterecipes/default.rb with below content:
+
+        package 'httpd'
+
+        service 'httpd' do
+        action [:enable, :start]
+        end
+
+        template '/var/www/html/index.html' do
+        source 'index.html.erb'
+        end
+
+
+    ==>Run the cookbook
+
+    [root@ip-172-31-95-250 cookbooks]# pwd
+        /root/chef/practice/Chef_Training/chef-repo/cookbooks
+        [root@ip-172-31-95-250 cookbooks]# chef-client --local-mode --runlist 'recipe[learn_chef_httpd]'
+        [2018-08-02T12:27:36+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /root/chef/practice/Chef_Training/chef-repo
+        One version per cookbook
+
+
