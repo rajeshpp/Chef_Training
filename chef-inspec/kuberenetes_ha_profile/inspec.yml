@@ -1,0 +1,8 @@
+name: kuberenetes_ha_profile
+title: InSpec Profile for Kubernetes HA
+maintainer: Rajesh Paleru
+copyright: Rajesh Paleru
+copyright_email: rajesh_paleru@optum.com
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0

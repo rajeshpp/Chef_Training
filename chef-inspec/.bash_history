@@ -12,10 +12,10 @@ ls -ltr
 git clone https://github.com/learn-chef/auditd.git
 ls -ltr
 tree auditd/
-cat auditd/controls/example.rb 
+cat auditd/controls/example.rb
 xat auditd/inspec.yml
 cat auditd/inspec.yml
-cat auditd/inspec.lock 
+cat auditd/inspec.lock
 ls -ltr
 inspec exec auditd/
 inspec exec root/auditd/
